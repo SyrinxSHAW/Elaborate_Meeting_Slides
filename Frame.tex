@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%   Xiaoxuan Shao  %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%   Southeast University  %%%%%%%%%%%%%%%%%
+%%%%%%%%%   SyrinxSHAW@outlook.com  %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%环境%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \documentclass[9pt]{beamer}
+    \usepackage{amsmath}
+    \usepackage{mathdots}
+    \usepackage{graphicx}
+    \usepackage{float}
+    \usepackage{multirow}
+    \usepackage{geometry}
+    \usepackage[UTF8]{inputenc}
+    \usepackage{CJK} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%或许用到的remark%%%%%%%%%%%%%%%%%%%
+%\vspace{0.4cm}    ←强制间距
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%引入Beamer%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetheme{Madrid} %主题
+%\usecolortheme{beaver} %颜色
+\usefonttheme{structuresmallcapsserif} %字体
+\pgfdeclareimage[height=1.5cm]{logo}{logo}
+\logo{\pgfuseimage{logo}}
+
+%%%%%%%%%%%%% 定义颜色 映射是x/256%%%%%%%%%%%%%%%%%
+\definecolor{GoodBlue}{rgb}{0.30,0.55,0.65} %蓝
+\definecolor{LightGreen}{rgb}{0.45, 0.65, 0.60} %灰绿
+%\definecolor{mygrey}{rgb}{0.52, 0.52, 0.51} % 灰色
+%\colorlet{main}{NormBlue!60!white} 
+%\colorlet{goodblue}{GoodBlue!50!white}
+%\colorlet{text}{bistre!100!white}
+
+
+%%指定不同颜色，fg是本身颜色，bg是背景颜色，!num!改变数值提供渐变色
+\setbeamercolor{title}{fg=white,bg=GoodBlue!95!black}
+\setbeamercolor{frametitle}{fg=white,bg=GoodBlue}
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{normal text}{fg=GoodBlue!30!black}
+%\setbeamercolor{block title}{bg=mygrey!14!white}
+%\setbeamercolor{block body}{fg=black,bg=mygrey!10!white}
+\setbeamercolor{math text}{fg=GoodBlue!30!black}
+\setbeamercolor{author in head/foot}{fg=white, bg=GoodBlue!55!black}
+\setbeamercolor{title in head/foot}{fg=white, bg=LightGreen!55!black}
+\setbeamercolor{structure}{fg=GoodBlue!70!black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Presentation Template]{A Normal Template for Presentation with Elaborated Beamer}
+\author{Xiaoxuan SHAO}
+\institute{\textsc{Southeast University}}    
+\date{\today}
+
+
+\begin{document}
+
+\AtBeginSection[]
+{
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{frame}
+	\title{A Normal Template for Presentation with Elaborated Beamer}
+%	\subtitle{Shit}
+	\author{\textsc{Xiaoxuan SHAO}}
+    \institute{\large \textsc{Southeast University}}   
+	\date{\textsc{\today}}
+	\titlepage
+\end{frame}
+
+\section{What I had done}
+
+\begin{frame}{Sleep}{or whatever}  %Slide 1
+
+%    \begin{itemize}  %编号
+%        \item Sleeping
+%        \item Eating
+%        \item Struggling
+%    \end{itemize}
+
+%    \begin{figure}
+%    \begin{minipage}{0.3\linewidth} %并排插图时线宽自己调调  %不过为什么不直接截图呢
+%    \centering
+%    \includegraphics[width =0.8\textwidth]{time1.png}
+%    \caption{Time=1}
+%    \end{minipage}
+%    \hfill%分栏的意思吧
+%    \begin{minipage}{0.3\linewidth}
+%    \centering
+%    \includegraphics[width =0.8\textwidth]{time500.png}
+%    \caption{Time=500}
+%    \end{minipage}
+%    \hfill%分栏的意思吧
+%    \begin{minipage}{0.3\linewidth}
+%    \centering
+%    \includegraphics[width =0.8\textwidth]{time9500.png}
+%    \caption{Time=9500}
+%    \end{minipage}
+%    \end{figure}
+
+ %   \begin{figure}   %d单张插图
+ %   \centering %居中
+ %   \includegraphics[width =0.4\textwidth]{time500.png}
+ %   \caption{Time=500}
+ %   \label{fig:label}
+ %   \end{figure}
+
+ %   \begin{figure}   %三张子图
+ %   \subfigure[]{
+ %   \label{fig:a} %% label for first subfigure
+ %   \includegraphics[width=2cm]{fig1/time1.png}
+ %   %\hspace{1in}  %使第一个子图占一半空间
+ %   \subfigure[]{
+ %   \label{fig:fig:b} %% label for secondsubfigure
+ %   \includegraphics[width=2cm]{fig1/time500.png}
+ %   \subfigure[]{
+ %   \label{fig:fig:c} %% label for secondsubfigure
+ %   \includegraphics[width=2cm]{fig1/time9500.png}
+ %   \caption{bingpai}
+ %   \label{fig1} %% label for entire figure
+ %   \end{figure}
+
+\end{frame}
+
+
+\section{What I will do}
+
+\begin{frame}{What I will do next week}
+
+    \begin{itemize}
+        \item Sleep
+        \item Touch fish
+        \item Play
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Ending of my presentation}
+
+    \begin{center}
+    \huge\textsc{Thanks for listening}
+
+    \vspace{1.3cm}
+
+    \normalsize \textsc{Xiaoxuan SHAO\\}
+    \vspace{0.4cm}
+    \normalsize \textsc{SyrinxSHAW@outlook.com}
+    \end{center}
+
+\end{frame}
+
+\end{document}
